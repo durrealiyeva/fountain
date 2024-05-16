@@ -9,7 +9,10 @@
     tailwind.config={
         theme:{
             container:{
-                center:true
+                center:true,
+                screens: {
+                    '2xl': '1280px' 
+                }
             },
             extend:{
                 colors:{
@@ -23,9 +26,6 @@
     }
    </script>
    <style>
-    .header{
-        background-image: url(./assets/img/image\ 13.png);
-    }
     
     .icon-search{
         background-image: url(./assets/icon/search.svg);
@@ -50,57 +50,57 @@
     }
    </style>
 </head>
-<body class="w-[1600px]">
-    <header class="header  bg-no-repeat bg-cover text-[white] relative mb-[80px]">
+<body>
+    <header class=" bg-[url(assets/img/image13.png)]  bg-no-repeat bg-cover text-[white] relative  mb-[80px]">
 
         <!--HEAD--> 
 
-      <div class="font-[600] py-[30px] text-[16px] flex items-center justify-between px-[100px]">
-        <div>
-           <figure>
-             <img src="./assets/img/Fountain.svg">
-            </figure>
-        </div>
-        <div class="flex gap-[24px]">
-            <a href=#>Home</a>
-            <a href=#>Courses</a>
-            <a href=#>Instuctors</a>
-            <a href=#>Schedules</a>
-            <a href=#>Contact Us</a>
-        </div>
-        <div class="flex items-center">
-            <i class="icon-search inline-flex h-[18px] w-[18px] mr-[15px]"></i>
-            <button class="h-[44px] px-[24px] ">Log in</button>
-            <button class="bg-white rounded-[5px] text-orange h-[44px] px-[24px] ">Register</button>
-        </div>
+      <div class="font-[600] py-[30px] text-[16px] flex items-center justify-between container">
+          <div>
+             <figure>
+               <img src="./assets/img/Fountain.svg">
+              </figure>
+          </div>
+          <div class="flex gap-[24px]">
+              <a href=#>Home</a>
+              <a href=#>Courses</a>
+              <a href=#>Instuctors</a>
+              <a href=#>Schedules</a>
+              <a href=#>Contact Us</a>
+          </div>
+          <div class="flex items-center">
+              <i class="icon-search inline-flex size-[18px] mr-[15px]"></i>
+              <button class="h-[44px] px-[24px] ">Log in</button>
+              <button class="bg-white rounded-[5px] text-orange h-[44px] px-[24px] ">Register</button>
+          </div>
       </div>
 
         <!--BODY-->
 
         <div class="m-auto w-[730px] text-center pb-[120px]">
-         <h2 class="pb-[12px] font-[600] text-[60px] pt-[90px] p-[50px]">A Classical Education for the Future</h2>
-         <h4 class="pb-[46px] font-[400] text-[24px]">We prepare you to engage in the world that is and to help bring about a world that ought to be</h4>
+         <h2 class="mb-[12px] font-[600] text-[60px] pt-[90px]">A Classical Education for the Future</h2>
+         <h4 class="mb-[46px] font-[400] text-[24px]">We prepare you to engage in the world that is and to help bring about a world that ought to be</h4>
          <button class="bg-orange h-[60px] rounded-[5px] px-[42px] font-[600px] text-[16px]">Get started</button>
         </div>
 
         <!--FOOT-->
 
-        <div class=" py-[40px] px-[100px] absolute overflow-hidden bg-white z-1 text-black flex item-center gap-[48px] rounded-[10px] left-[20%] bottom-[-80px]  shadow-[0px_21px_97px_0px_#CFCFCF40;]">
+        <div class=" py-[40px] px-[100px] absolute overflow-hidden bg-white z-1 text-black flex items-center gap-[48px] rounded-[10px] w-[969px] left-0 right-0 mx-auto bottom-[-70px]  shadow-[0px_21px_97px_0px_#CFCFCF40;]">
             <div class="flex justify-center items-center">
-                <span class="flex items-center justify-center bg-lightorange h-[60px] w-[60px] rounded-[50%] mr-[24px]">
-                   <i class="bg-no-repeat items-center inline-flex  w-[35px] h-[35px] icon-chat"></i>
+                <span class="flex items-center justify-center bg-lightorange size-[60px] rounded-[50%] mr-[24px]">
+                   <i class="bg-no-repeat items-center inline-flex  size-[35px] icon-chat"></i>
                 </span>
                 <a class="leading-[40px] font-[400px] text-[24px]" href="#">Live chat</a>
             </div>
             <div class="flex justify-center items-center">
-                <span class="flex items-center justify-center bg-lightorange h-[60px] w-[60px] rounded-[50%] mr-[24px]">
-                   <i class="bg-no-repeat items-center inline-flex  w-[36px] h-[36px] icon-examination"></i>
+                <span class="flex items-center justify-center bg-lightorange size-[60px] rounded-[50%] mr-[24px]">
+                   <i class="bg-no-repeat items-center inline-flex  size-[36px] icon-examination"></i>
                 </span>
                 <a class="leading-[40px] font-[400px] text-[24px]" href="#">Examination</a>
             </div>
             <div class="flex justify-center items-center">
-                <span class="flex items-center justify-center bg-lightorange h-[60px] w-[60px] rounded-[50%] mr-[24px]">
-                   <i class="bg-no-repeat items-center inline-flex  w-[35px] h-[35px] icon-competition"></i>
+                <span class="flex items-center justify-center bg-lightorange size-[60px] rounded-[50%] mr-[24px]">
+                   <i class="bg-no-repeat items-center inline-flex  size-[35px] icon-competition"></i>
                 </span>
                 <a class="leading-[40px] font-[400px] text-[24px]" href="#">Competition</a>
             </div>
@@ -110,14 +110,10 @@
        <!--TOP CATEGORIES-->
          <article class="pt-[120px] pb-[100px]">
             <h3 class="pb-[50px] text-center font-[600] text-[48px]">Top cartegories</h3>
-            <div class="pr-[100px] flex justify-end mb-[24px]">
-                <select class=" appearance-none text-orange font-[400] text-[24px]">
-                    <option>See all</option>
-                    <option>Marketing</option>
-                    <option>Design</option>
-                </select>
+            <div class="pr-[120px] flex justify-end mb-[24px]">
+                <a href="#" class="text-orange font-[400] text-[24px]">See all</a>
             </div>
-            <div class="px-[100px] grid grid-cols-4 gap-[32px] ">
+            <div class="container grid grid-cols-4 gap-[32px] ">
                 <figure class="relative aspect-ratio aspect-[6/9]">
                     <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
                     <div class="absolute bg-black/50 inset-0 "></div>
@@ -143,30 +139,37 @@
 
            <!--EXPERTS-->
 
-           <article class="bg-gradient-to-r from-peach to-lightpeach px-[100px]">
-           <div class="container flex">
-              <div class="relative mr-[160px] pt-[40px] pb-[54px]">    
+           <article class="bg-gradient-to-r from-peach via-white to-peach">
+           <div class="container grid grid-cols-12">
+              <div class="relative pt-[40px] pb-[54px] col-span-6">    
                   <figure class=" w-[490px]">
                     <img class="size-full object-cover" src="./assets/img/experts.png">
                   </figure>
-                  <div class="absolute right-[-40px] top-[320px] shadow-[0px_0px_69.23px_0px_#70707040;] rounded-[10px] px-[20px] py-[16px] bg-white flex flex-col justify-center items-center">
+                  <div class="absolute left-[360px] bottom-[140px] shadow-[0px_0px_69.23px_0px_#70707040;] rounded-[10px] px-[20px] py-[16px] bg-white flex flex-col justify-center items-center">
                     <span class=" flex items-center justify-center bg-lightorange h-[50px] w-[50px] rounded-[50%]">
                         <i class="bg-no-repeat items-center inline-flex  w-[35px] h-[35px] icon-competition"></i>
                     </span>
-                    <h2 class="pt-[12px] leading-[30px] w-[130px] font-[600] text-[20px] text-center"> <span class="text-orange">Outstanding</span> Instructors</h2>
-                    <img class="absolute z-1 left-[30px] bottom-[100px]" src="./assets/img/out.svg">
-                    <div class="mt-[16px] relative">
-                        <figure class=" w-[80px] h-[40px] rounded-[30px] border-white">
-                            <img class="absolute left-[-20px] top-[-2px] size-full  bg-cover" src="./assets/img/outimg.svg">
-                            <img class="absolute left-[0px] top-[-2px] size-full bg-cover" src="./assets/img/outimg.svg">
-                            <img class="absolute left-[20px] top-[-2px] size-full bg-cover" src="./assets/img/outimg.svg">
+                    <h2 class="pt-[12px] leading-[30px] w-[130px] font-[600] text-[20px] text-center"> 
+                        <span class="text-orange relative after:content[''] after:absolute after:top-[27px] after:bg-center after:h-[3.7px] after:bg-no-repeat after:bg-contain after:left-0 after:right-0 after:bg-[url(./assets/img/outvector.png)] ">Outstanding</span> 
+                        Instructors</h2>
+                    <div class="mt-[16px] flex space-x-[-20px] ">
+                        <figure class=" size-[40px] rounded-full overflow-hidden   border-white border-[3px]">
+                            <img class=" size-full  object-cover " src="./assets/img/men.jpg">
                         </figure>
+                        <figure class=" size-[40px] rounded-full overflow-hidden   border-white border-[3px]">
+                            <img class=" size-full  object-cover " src="./assets/img/men.jpg">
+                        </figure>
+                        <figure class=" size-[40px] rounded-full overflow-hidden   border-white border-[3px]">
+                            <img class=" size-full  object-cover " src="./assets/img/men.jpg">
+                        </figure>
+                        
                     </div>
                   </div>
                </div>
                <div class="relative w-[500px] pt-[114px] pb-[100px]">
-                   <img class="absolute z-1 right-[120px] top-[185px]" src="./assets/img/Vector 27.svg">
-                   <h2 class=" text-gray mb-[24px] font-[700] text-[52px]">We are <span class="text-orange">Experts</span> Learning Institution</h2>
+                   <h2 class=" text-gray mb-[24px] font-[700] text-[52px]">We are 
+                    <span class="text-orange relative after:content-[''] after:absolute after:top-[70px] after:left-0 after:right-0 after:bg-[url(./assets/img/outvector.png)] after:h-[10px] after:bg-no-repeat  after:bg-center after:bg-contain   ">Experts</span> 
+                    Learning Institution</h2>
                    <h4 class="text-gray mb-[65px] font-[400] text-[24px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit, bibendum volutpat platea mi, adipiscing eget magna. Eu nulla ut urna venenatis velit et tincidunt. Id vitae velit </h4>
                    <button class="text-white bg-orange h-[60px] rounded-[5px] px-[42px] font-[600px] text-[16px]">Enroll now</button>
                </div>
@@ -178,21 +181,21 @@
             <article class="pt-[100px]">
                 <h2 class="m-auto pb-[25px] text-gray w-[400px] font-[600] text-[48px] text-center">Explore Our Popular Course</h2>
 
-                <div class="flex items-center justify-end pr-[100px] pb-[65px] relative">
-                   <label for="sortby">
-                    <select class="font-[400] text-[18px] appearance-none bg-orange rounded-full text-white py-[8px] px-[15px]">
+                <div class="flex items-center justify-end container pb-[65px] ">
+                   <label  class=" flex bg-orange rounded-full w-[129px] h-[46px] relative ">
+                    <select class="relative pr-[15px] text-right w-full h-full z-50 font-[400]  text-[18px] outline-none appearance-none bg-transparent text-white ">
                         <option>Sort by</option>
                         <option>Marketing</option>
                         <option>Design</option>
                     </select>
+                    <i  class="absolute left-[10px] top-[8px] inline-flex bottom-0 right-0  bg-center bg-no-repeat size-[30px] icon-down"></i>
                    </label>
-                   <i id="sortby" class=" z-1 absolute top-[15px] bg-no-repeat items-center inline-flex justify-center  w-[30px] h-[30px] icon-down"></i>
                 </div>
 
-                <div class="px-[100px] grid grid-cols-3 gap-[32px]">
+                <div class="container grid grid-cols-3 gap-[32px]">
                     <aside class="shadow-[0px_0px_20px_0px_#CBCBCB40;] rounded-[10px] overflow-hidden">
-                        <figure class=" ">
-                            <img class="object-cover size-full" src="./assets/img/image 13.png">
+                        <figure class="aspect-ratio aspect-[5/3] ">
+                            <img class="object-cover size-full" src="./assets/img/image13.png">
                         </figure>
                         <div class="flex pt-[24px] px-[24px] pb-[42px]">
                             <h4 class=" text-gray font-[500] pr-[20px] text-[26px]">Learn Marketing From Top Instructors.</h4>
@@ -211,8 +214,8 @@
                         </div>
                     </aside>
                     <aside class="shadow-[0px_0px_20px_0px_#CBCBCB40;] rounded-[10px] overflow-hidden">
-                        <figure class=" ">
-                            <img class="object-cover size-full" src="./assets/img/image 13.png">
+                        <figure class="aspect-ratio aspect-[5/3]">
+                            <img class="object-cover size-full" src="./assets/img/image13.png">
                         </figure>
                         <div class="flex pt-[24px] px-[24px] pb-[42px]">
                             <h4 class=" text-gray font-[500] pr-[20px] text-[26px]">Learn Marketing From Top Instructors.</h4>
@@ -231,8 +234,8 @@
                         </div>
                     </aside>
                     <aside class="shadow-[0px_0px_20px_0px_#CBCBCB40;] rounded-[10px] overflow-hidden">
-                        <figure class=" ">
-                            <img class="object-cover size-full" src="./assets/img/image 13.png">
+                        <figure class="aspect-ratio aspect-[5/3]">
+                            <img class="object-cover size-full" src="./assets/img/image13.png">
                         </figure>
                         <div class="flex pt-[24px] px-[24px] pb-[42px]">
                             <h4 class=" text-gray font-[500] pr-[20px] text-[26px]">Learn Marketing From Top Instructors.</h4>
@@ -251,8 +254,8 @@
                         </div>
                     </aside>
                     <aside class="shadow-[0px_0px_20px_0px_#CBCBCB40;] rounded-[10px] overflow-hidden">
-                        <figure class=" ">
-                            <img class="object-cover size-full" src="./assets/img/image 13.png">
+                        <figure class="aspect-ratio aspect-[5/3]">
+                            <img class="object-cover size-full" src="./assets/img/image13.png">
                         </figure>
                         <div class="flex pt-[24px] px-[24px] pb-[42px]">
                             <h4 class=" text-gray font-[500] pr-[20px] text-[26px]">Learn Marketing From Top Instructors.</h4>
@@ -271,8 +274,8 @@
                         </div>
                     </aside>
                     <aside class="shadow-[0px_0px_20px_0px_#CBCBCB40;] rounded-[10px] overflow-hidden">
-                        <figure class=" ">
-                            <img class="object-cover size-full" src="./assets/img/image 13.png">
+                        <figure class="aspect-ratio aspect-[5/3]">
+                            <img class="object-cover size-full" src="./assets/img/image13.png">
                         </figure>
                         <div class="flex pt-[24px] px-[24px] pb-[42px]">
                             <h4 class=" text-gray font-[500] pr-[20px] text-[26px]">Learn Marketing From Top Instructors.</h4>
@@ -291,8 +294,8 @@
                         </div>
                     </aside>
                     <aside class="shadow-[0px_0px_20px_0px_#CBCBCB40;] rounded-[10px] overflow-hidden">
-                        <figure class=" ">
-                            <img class="object-cover size-full" src="./assets/img/image 13.png">
+                        <figure class="aspect-ratio aspect-[5/3]">
+                            <img class="object-cover size-full" src="./assets/img/image13.png">
                         </figure>
                         <div class="flex pt-[24px] px-[24px] pb-[42px]">
                             <h4 class=" text-gray font-[500] pr-[20px] text-[26px]">Learn Marketing From Top Instructors.</h4>
@@ -316,14 +319,14 @@
 
             <!--TOP-NOTCH-->
 
-            <article class="bg-gradient-to-r from-peach to-lightpeach px-[180px]">
-                <div class="container flex">
-                    <div class=" pt-[140px] pb-[80px] pr-[60px]">
+            <article class="bg-gradient-to-r from-peach via-white to-peach mt-[123px]">
+                <div class="container grid grid-cols-8">
+                    <div class="col-span-4 pt-[140px] pb-[80px] pr-[120px]">
                         <h2 class=" text-gray mb-[24px] font-[700] text-[52px]">Our online  <span class="text-orange">examination</span> is top-notch</h2>
                         <h4 class="text-gray mb-[65px] font-[400] text-[24px]">Prepare your self for greater challenges with our online examination. </h4>
                         <button class="text-white bg-orange h-[60px] rounded-[5px] px-[42px] font-[600px] text-[16px]">Take a test</button>
                     </div>
-                   <div class="relative mr-[160px] pt-[40px] pb-[54px]">    
+                   <div class="col-span-4 relative mr-[160px] pt-[40px] pb-[54px]">    
                        <figure class=" w-[490px]">
                          <img class="size-full object-cover" src="./assets/img/experts.png">
                        </figure>
@@ -342,41 +345,41 @@
 
              <article class="pt-[120px] pb-[100px]">
                 <h3 class="pb-[50px] text-center font-[600] text-[48px]">Popular examination</h3>
-                <div class="pr-[100px] flex justify-end mb-[24px]">
-                    <select class=" appearance-none text-orange font-[400] text-[24px]">
-                        <option>See all</option>
-                        <option>Marketing</option>
-                        <option>Design</option>
-                    </select>
+                <div class="pr-[120px] flex justify-end mb-[24px]">
+                    <a href="#" class=" text-orange font-[400] text-[24px]">See all</a>
                 </div>
-                <div class="px-[100px] grid grid-cols-4 gap-[32px] ">
-                    <figure class="rounded-[10px] overflow-hidden relative aspect-ratio aspect-[6/9]">
+                <div class="container grid grid-cols-4 gap-[32px] ">
+                    <figure class="rounded-[10px] overflow-hidden relative aspect-ratio aspect-[8/9]">
                         <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
                         <div class="absolute bg-black/50 inset-0 "></div>
-                        <span class="text-white font-[600] text-[32px] absolute bottom-[9px] left-[24px]">NATURE</span>
+                        <span class="text-white font-[600] text-[32px] absolute bottom-[40px] left-[24px]">NATURE</span>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[9px] left-[24px]">of Science</span>
                     </figure>
-                    <figure class="rounded-[10px] overflow-hidden relative aspect-ratio aspect-[6/9]">
+                    <figure class="rounded-[10px] overflow-hidden relative aspect-ratio aspect-[8/9]">
                         <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
                         <div class="absolute bg-black/50 inset-0"></div>
-                        <span class="text-white font-[600] text-[32px] absolute bottom-[9px] left-[24px]">Design</span>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[40px] left-[24px]">2022</span>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[9px] left-[24px]">Astro Report</span>
                     </figure>
-                    <figure class="rounded-[10px] overflow-hidden relative aspect-ratio aspect-[6/9]">
+                    <figure class="rounded-[10px] overflow-hidden relative aspect-ratio aspect-[8/9]">
                         <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
                         <div class="absolute bg-black/50 inset-0 "></div>
-                        <span class="text-white font-[600] text-[32px] absolute bottom-[9px] left-[24px]">Programming</span>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[40px] left-[24px]">Data Analysis</span>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[9px] left-[24px]">With Python</span>
                     </figure>
-                    <figure class="rounded-[10px] overflow-hidden relative aspect-ratio aspect-[6/9]">
+                    <figure class="rounded-[10px] overflow-hidden relative aspect-ratio aspect-[8/9]">
                         <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
                         <div class="absolute bg-black/50 inset-0"></div>
-                        <span class="text-white font-[600] text-[32px] absolute bottom-[9px] left-[24px]">Technology</span>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[40px] left-[24px]">Advanced</span>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[9px] left-[24px]">UX Designs</span>
                     </figure>
                 </div>
              </article>
 
 
              <!--INPUT-->
-             <h3 class="pb-[64px] px-[320px] text-center font-[700] text-[48px]">Competate with various scholars around the globe</h3>
-             <article class="bg-gradient-to-r from-peach to-lightpeach px-[100px]">
+             <h3 class="pb-[64px] text-center font-[700] text-[48px]">Competate with various <br> scholars around the globe</h3>
+             <article class="bg-gradient-to-r from-peach via-white to-peach">
                 <div class="container flex">
                    <div class="relative mr-[160px] pt-[40px] pb-[54px]">    
                        <figure class=" w-[490px]">
@@ -386,8 +389,9 @@
                          <span class=" flex items-center justify-center bg-lightorange h-[50px] w-[50px] rounded-[50%]">
                              <i class="bg-no-repeat items-center inline-flex  w-[35px] h-[35px] icon-competition"></i>
                          </span>
-                         <h2 class="pt-[12px] leading-[30px] w-[130px] font-[600] text-[20px] text-center"> <span class="text-orange">Den</span> of Schorlars</h2>
-                         <img class="absolute z-1 left-[25px] bottom-[45px]" src="./assets/img/out.svg">
+                         <h2 class="pt-[12px] leading-[30px] w-[130px] font-[600] text-[20px] text-center"> 
+                            <span class="text-orange relative after:content[''] after:absolute after:top-[25px] after:bg-center after:h-[3.7px] after:bg-no-repeat after:bg-contain after:left-0 after:right-0 after:bg-[url(./assets/img/outvector.png)]">Den</span>
+                             <br> of <br> Schorlars</h2>
                        </div>
                     </div>
                     <div class="bg-white my-[50px] pt-[30px] pb-[50px] px-[40px] rounded-[10px]">
@@ -396,11 +400,11 @@
                         <input type="text" placeholder="Email" class="w-[100%] rounded-[5px] border-[3px] border-[#D9DCE0] p-[18px] mb-[30px]">
                         <input type="text" placeholder="Phone number" class="w-[100%] rounded-[5px] border-[3px] border-[#D9DCE0] p-[18px] mb-[30px]">
                         <div class="relative mb-[100px]">
-                            <img class="absolute top-[20px] left-[15px]" src="./assets/img/snow.svg">
+                            <img class="absolute z-50 top-[20px] left-[15px]" src="./assets/img/snow.svg">
                             <input type="text" placeholder="List of courses goes here " class="placeholder:text-[#404040CC] pl-[40px] font-[600] text-[16px] w-[100%] rounded-[5px] border-[3px] border-[#D9DCE0] p-[18px] mb-[30px]"> 
-                            <select class="absolute right-[20px] top-[20px] ">
+                            <select class="absolute w-[50%] right-[20px] top-[20px] ">
                                 <option></option>
-                                <option></option>
+                                <option>nnnnnnnnn</option>
                                 <option></option>
                             </select> 
                         </div>
@@ -412,11 +416,191 @@
                 </article>
 
 
-                <!---Reviews-->
+                <!---Featured Competition-->
 
 
-                <article>
-                    <h3>Reviews</h3>
-                </article>
+                <article class="pt-[100px] pb-[100px]">
+                    <h3 class="pb-[50px] text-center font-[700] text-[48px]">Featured Competition</h3>
+                    <div class="pr-[120px] flex justify-end mb-[24px]">
+                        <a href="#" class="text-orange font-[400] text-[24px]">See all</a>
+                    </div>
+                    <div class="container grid grid-cols-4 gap-[32px] ">
+                        <figure class="relative aspect-ratio aspect-[6/9]">
+                            <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
+                            <div class="absolute bg-black/50 inset-0 "></div>
+                            <span class="text-white font-[600] text-[32px] absolute bottom-[40px] left-[24px]">Marketing <br>Contest</span>
+                            <span class="text-white font-[600] text-[20px] absolute bottom-[9px] left-[24px]">The Future Economy</span>
+                        </figure>
+                        <figure class="relative aspect-ratio aspect-[6/9]">
+                            <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
+                            <div class="absolute bg-black/50 inset-0"></div>
+                            <span class="text-white font-[600] text-[32px] absolute bottom-[40px] left-[24px]">UI/UX Design<br> Contest</span>
+                            <span class="text-white font-[600] text-[20px] absolute bottom-[9px] left-[24px]">Accessibility in design</span>
+                        </figure>
+                        <figure class="relative aspect-ratio aspect-[6/9]">
+                            <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
+                            <div class="absolute bg-black/50 inset-0 "></div>
+                            <span class="text-white font-[600] text-[32px] absolute bottom-[40px] left-[24px]">Programming <br>Contest</span>
+                            <span class="text-white font-[600] text-[20px] absolute bottom-[9px] left-[24px]">The Future of AI</span>
+                        </figure>
+                        <figure class="relative aspect-ratio aspect-[6/9]">
+                            <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
+                            <div class="absolute bg-black/50 inset-0"></div>
+                            <span class="text-white font-[600] text-[32px] absolute bottom-[40px] left-[24px]">Photography<br>Contest</span>
+                            <span class="text-white font-[600] text-[20px] absolute bottom-[9px] left-[24px]">The Beauty  of Art</span>
+                        </figure>
+                    </div>
+                 </article>
+
+
+                 <!---Publicstions-->
+
+                 <article class="bg-gradient-to-r from-peach via-white to-peach  mb-[100px]">
+                    <div class="container flex pt-[100px] pb-[95px]">
+                        <div class="mr-[100px]">
+                            <h2 class=" text-gray mb-[24px] font-[700] text-[52px]">Get
+                                 <span class="text-orange relative after:absolute after:content-[''] after:top-[65px] after:bg-no-repeat after:bg-contain after:bg-center after:left-0 after:right-0 after:bg-[url(./assets/img/outvector.png)] after:h-[15px] ">Publicstions</span>
+                                 from best Aurtors around the  Globe</h2>
+                            <h4 class="text-gray mb-[65px] font-[400] text-[24px]">Lorem ipsum dolor sit at, consectetur adipielit. Facilisi fermentum, dignissim pharetra.  pharetra. Aliquam </h4>
+                            <button class="text-white bg-orange h-[60px] rounded-[5px] px-[42px] font-[600px] text-[16px]">Take a test</button>
+                        </div>
+                       <div class="relative mr-[30px]">    
+                           <figure class=" w-[470px]">
+                             <img class="size-full object-cover" src="./assets/img/Competition.png">
+                           </figure>
+                           <div class="absolute left-[-40px] top-[150px] shadow-[0px_0px_69.23px_0px_#70707040;] rounded-[10px] px-[20px] py-[16px] bg-white flex flex-col justify-center items-center">
+                             <span class=" flex items-center justify-center bg-lightorange h-[50px] w-[50px] rounded-[50%]">
+                                 <i class="bg-no-repeat items-center inline-flex  w-[35px] h-[35px] icon-competition"></i>
+                             </span>
+                             <h2 class="pt-[12px] leading-[30px] w-[120px] font-[600] text-[20px] text-center">Readers <br>are <br>
+                                <span class="text-orange relative after:absolute after:content-[''] after:top-[20px] after:bg-no-repeat after:bg-contain after:bg-center after:left-0 after:right-0 after:bg-[url(./assets/img/outvector.png)] after:h-[15px]">leaders</span>
+                            </h2>
+                           </div>
+                        </div>
+                    </div>
+                    </article>
+        
+
+                    <!---Recent Publications-->
+
+                    
+             <article class="mb-[100px]">
+                <h3 class="pb-[50px] text-center font-[600] text-[48px]">Recent Publications</h3>
+                <div class="pr-[120px] flex justify-end mb-[24px]">
+                    <a href="#" class=" text-orange font-[400] text-[24px]">See all</a>
+                </div>
+                <div class="container grid grid-cols-4 gap-[32px] ">
+                    <figure class="rounded-[10px] overflow-hidden relative aspect-ratio aspect-[8/9]">
+                        <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
+                        <div class="absolute bg-black/50 inset-0 "></div>
+                        <span class="text-white font-[600] text-[32px] absolute bottom-[40px] left-[24px]">NATURE</span>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[9px] left-[24px]">of Science</span>
+                    </figure>
+                    <figure class="rounded-[10px] overflow-hidden relative aspect-ratio aspect-[8/9]">
+                        <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
+                        <div class="absolute bg-black/50 inset-0"></div>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[40px] left-[24px]">2022</span>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[9px] left-[24px]">Astro Report</span>
+                    </figure>
+                    <figure class="rounded-[10px] overflow-hidden relative aspect-ratio aspect-[8/9]">
+                        <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
+                        <div class="absolute bg-black/50 inset-0 "></div>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[40px] left-[24px]">Data Analysis</span>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[9px] left-[24px]">With Python</span>
+                    </figure>
+                    <figure class="rounded-[10px] overflow-hidden relative aspect-ratio aspect-[8/9]">
+                        <img class=" size-full object-cover" src="./assets/img/istockphoto-1500285927-1024x1024.jpg">
+                        <div class="absolute bg-black/50 inset-0"></div>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[40px] left-[24px]">Advanced</span>
+                        <span class="text-white font-[500] text-[26px] absolute bottom-[9px] left-[24px]">UX Designs</span>
+                    </figure>
+                </div>
+             </article>
+
+
+          <!---Reviews-->
+
+          <article class="container mb-[160px]">
+            <h3 class="text-center font-[600] text-[32px]">Reviews</h3>
+            <div class="grid grid-cols-3 gap-[32px] pt-[54px]">
+                <div>
+                    <h2 class=" text-gray mb-[24px] font-[700] text-[52px]">What our
+                         <span class="text-orange relative after:absolute after:content-[''] after:top-[65px] after:bg-no-repeat after:bg-contain after:bg-center after:left-0 after:right-0 after:bg-[url(./assets/img/outvector.png)] after:h-[15px] ">Students</span>
+                         say about us</h2>
+                </div>
+               <div class="px-[40px] pt-[60px] pb-[50px] shadow-[0px_0px_20px_0px_#E2E2E240;] rounded-[10px] ">    
+                   <div class="flex mb-[30px]">
+                    <figure class="rounded-[40px] overflow-hidden size-[70px] mr-[16px]">
+                        <img class="size-full object-cover" src="./assets/img/men.jpg">
+                      </figure>
+                        <div class="flex flex-col items-start justify-center">
+                           <h4 class="font-[700] text-[20px]">Mohh Jumah</h4>
+                           <p class="text-orange font-[600] text-[18px]">Senior Developer</p>
+                        </div>
+                   </div>
+                     <p class="font-[400] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis </p>
+                </div>
+                <div class=" px-[40px] pt-[60px] pb-[50px] shadow-[0px_0px_20px_0px_#E2E2E240;] rounded-[10px] ">    
+                    <div class="flex mb-[30px]">
+                     <figure class="rounded-[40px] overflow-hidden size-[70px] mr-[16px]">
+                         <img class="size-full object-cover" src="./assets/img/men.jpg">
+                       </figure>
+                         <div class="flex flex-col items-start justify-center">
+                            <h4 class="font-[700] text-[20px]">Mohh Jumah</h4>
+                            <p class="text-orange font-[600] text-[18px]">Senior Developer</p>
+                         </div>
+                    </div>
+                      <p class="font-[400] text-[18px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis </p>
+                 </div>
+            </div>
+            </article>
+
+
+            <!--Footer-->
+           
+     <footer class="bg-black pt-[75px]  pb-[30px] text-white">
+       <div class=" container grid grid-cols-12 mb-[50px]">
+            <div class="w-[230px] col-span-6">
+                <h2 class="mb-[24px] text-orange font-[600] text-[32px]">Fountain</h2>
+                <p class=" mb-[32px] font-[400] text-[16px]">We are not here to sell you products, we sell value through our expertise.</p>
+                <div class="flex space-x-[24px] justify-start items-center">
+                  <span class="size-[24px] bg-[url(./assets/img/fb.svg)] bg-cover"></span>
+                  <span class="size-[24px] bg-[url(./assets/img/twt.svg)] bg-cover"></span>
+                  <span class="size-[24px] bg-[url(./assets/img/inst.svg)] bg-cover"></span>
+                  <span class="size-[24px] bg-[url(./assets/img/ln.svg)] bg-cover"></span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-[16px] font-[600] text-[16px] col-span-4git a">
+                    <h3 class="w-[320px]">Address:
+                       <br> 38 opebi Road, Ikeja, Lagos State, Nigeia.</h3>
+                       <p>Phone:
+                       <br> +2349022396389</p>
+                       <p>Email:
+                        <br>contact@contentionary.com</p>
+            </div>
+            <div class="col-span-1">
+               <h3 class="font-[600] text-[16px] mb-[24px]">Company</h3>
+               <div class="flex flex-col gap-[12px] font-[400] text-[16px]">
+                <p>About Us</p>
+                <p>Features</p>
+                <p>Pricing</p>
+               </div>
+            </div>
+       </div>
+       <div class="m-auto text-center mb-[63px]">
+        <h2 class="font-[400] text-[24px] text-center mb-[17px]">Subscribe to get latest updates</h2>
+        <div class="relative w-[550px] m-auto">
+            <input class=" placeholder:text-orange placeholder:font-[500] placeholder:text-[16px] m-auto w-[550px] text-black p-[10px] h-[52px] bg-white" type="email" placeholder="Your Email address"></input>
+        <button class="absolute right-0 h-[52px] bg-orange px-[28px] py-[14px] font-[400] text-[14px]">Subscribe</button>
+        </div>
+       </div>
+       <div class="container flex">
+        <figure class="mr-[32px]">
+            <img src="./assets/img/kontent.svg">
+        </figure>
+        <h3 class="font-[400] text-[24px]">Powered By Contentionary</h3>
+       </div>
+     </footer>
+
 </body>
 </html>
